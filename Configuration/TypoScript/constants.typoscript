@@ -1,0 +1,8 @@
+plugin.tx_formrelay_jsonrequest {
+  settings {
+    enabled = 0
+    url =
+    ignoreEmptyFields = 1
+    passthroughFields = 0
+  }
+}

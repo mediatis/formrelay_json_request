@@ -1,0 +1,16 @@
+plugin.tx_formrelay_jsonrequest {
+  settings {
+
+    enabled = {$plugin.tx_formrelay_jsonrequest.settings.enabled}
+    url = {$plugin.tx_formrelay_jsonrequest.settings.url}
+
+    ignoreEmptyFields = {$plugin.tx_formrelay_jsonrequest.settings.ignoreEmptyFields}
+    passthroughFields = {$plugin.tx_formrelay_jsonrequest.settings.passthroughFields}
+
+    fields {
+    }
+
+    cookies {
+    }
+  }
+}
