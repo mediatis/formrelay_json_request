@@ -1,0 +1,71 @@
+{
+  "name": "mediatis/formrelay-jsonrequest",
+  "type": "typo3-cms-extension",
+  "description": "Delivery system via JSON HTTP requests (e.g. webhooks) based on Mediatis Formrelay",
+  "license": "GPL-2.0+",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "form",
+    "formrelay",
+    "request",
+    "json"
+  ],
+  "homepage": "https://www.mediatis.de",
+  "authors": [
+    {
+      "name": "Michael Vöhringer",
+      "role": "Developer"
+    },
+    {
+      "name": "Meelis Karulin",
+      "role": "Developer"
+    },
+    {
+      "name": "Damian Ickler",
+      "role": "Developer"
+    },
+    {
+      "name": "Stephan Ude",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^9.5 || ^10.4",
+    "typo3-ter/formrelay": "^2.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.0",
+    "nimut/testing-framework": "^4.1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mediatis\\FormrelayJsonrequest\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mediatis\\FormrelayJsonrequest\\Tests\\": "Tests"
+    }
+  },
+  "replace": {
+    "mediatis/formrelay_jsonrequest": "self.version",
+    "typo3-ter/formrelay-jsonrequest": "self.version"
+  },
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "scripts": {
+    "link-extension": [
+      "mkdir -p .Build/Web/typo3conf/ext/",
+      "[ -L .Build/Web/typo3conf/ext/formrelay_jsonrequest ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/formrelay_jsonrequest"
+    ]
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}
