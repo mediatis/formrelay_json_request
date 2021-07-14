@@ -1,0 +1,28 @@
+
+plugin.tx_formrelay_jsonrequest {
+  settings {
+    enabled = {$plugin.tx_formrelay_jsonrequest.settings.enabled}
+    url = {$plugin.tx_formrelay_jsonrequest.settings.url}
+
+    gate {
+    }
+
+    defaults {
+      # request-field -> request-value
+      # some_id = xyz
+    }
+
+    fields {
+      mapping {
+        # form-field -> request-field
+        # first_name = first-name
+      }
+
+      unmapped = description
+      unmapped.appendKeyValue = 1
+    }
+    values {
+      ignoreIfEmpty = 1
+    }
+  }
+}
