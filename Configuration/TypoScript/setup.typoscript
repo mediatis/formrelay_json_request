@@ -18,8 +18,7 @@ plugin.tx_formrelay_jsonrequest {
         # first_name = first-name
       }
 
-      unmapped = description
-      unmapped.appendKeyValue = 1
+      unmapped.ignore = 1
     }
     values {
       ignoreIfEmpty = 1
