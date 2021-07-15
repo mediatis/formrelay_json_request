@@ -4,7 +4,7 @@ namespace Mediatis\FormrelayJsonrequest;
 
 use FormRelay\Core\Service\RegistryInterface;
 use FormRelay\JsonRequest\JsonRequestInitialization;
-use FormRelay\JsonRequest\JsonRequesRoutetInitialization;
+use FormRelay\JsonRequest\JsonRequestRouteInitialization;
 
 class Initialization
 {
