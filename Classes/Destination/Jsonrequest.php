@@ -16,7 +16,14 @@ class Jsonrequest extends AbstractDestination
     {
         $url = $conf['url'];
 
-        $cookieNames = $conf['cookies'];
+        $cookieNames = [];
+        if (isset($conf['cookies'])) {
+            if (is_array($conf['cookies'])) {
+                $cookieNames = $conf['cookies'];
+            } else {
+                $cookieNames = explode(',', (string)$conf['cookies']);
+            }
+        }
         $cookies = [];
         foreach ($cookieNames as $name) {
             if (isset($_COOKIE[$name])) {
