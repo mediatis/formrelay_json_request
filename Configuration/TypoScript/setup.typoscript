@@ -4,6 +4,8 @@ plugin.tx_formrelay_jsonrequest {
     enabled = {$plugin.tx_formrelay_jsonrequest.settings.enabled}
     url = {$plugin.tx_formrelay_jsonrequest.settings.url}
 
+    cookies =
+
     gate {
     }
 
