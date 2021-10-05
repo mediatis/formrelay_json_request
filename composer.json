@@ -1,5 +1,5 @@
 {
-  "name": "mediatis/formrelay-jsonrequest",
+  "name": "mediatis/formrelay-json-request",
   "type": "typo3-cms-extension",
   "description": "Delivery system via JSON HTTP requests (e.g. webhooks) based on Mediatis Formrelay",
   "license": "GPL-2.0+",
@@ -40,12 +40,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Mediatis\\FormrelayJsonrequest\\": "Classes"
+      "Mediatis\\FormrelayJsonRequest\\": "Classes"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Mediatis\\FormrelayJsonrequest\\Tests\\": "Tests"
+      "Mediatis\\FormrelayJsonRequest\\Tests\\": "Tests"
     }
   },
   "config": {
@@ -55,7 +55,7 @@
   "scripts": {
     "link-extension": [
       "mkdir -p .Build/Web/typo3conf/ext/",
-      "[ -L .Build/Web/typo3conf/ext/formrelay_jsonrequest ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/formrelay_jsonrequest"
+      "[ -L .Build/Web/typo3conf/ext/formrelay_json_request ] || ln -snvf ../../../../. .Build/Web/typo3conf/ext/formrelay_json_request"
     ]
   },
   "extra": {

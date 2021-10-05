@@ -9,5 +9,5 @@ if (!defined('TYPO3_MODE')) {
     $registry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\Mediatis\Formrelay\Service\Registry::class);
 
     // register destination
-    $registry->registerDestination(\Mediatis\FormrelayJsonrequest\Destination\Jsonrequest::class);
+    $registry->registerDestination(\Mediatis\FormrelayJsonRequest\Destination\JsonRequest::class);
 })();

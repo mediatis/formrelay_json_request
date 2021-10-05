@@ -1,15 +1,15 @@
 <?php
 
-namespace Mediatis\FormrelayJsonrequest\Destination;
+namespace Mediatis\FormrelayJsonRequest\Destination;
 
 use Mediatis\Formrelay\Destination\AbstractDestination;
-use Mediatis\FormrelayJsonrequest\DataDispatcher\JsonrequestDispatcher;
+use Mediatis\FormrelayJsonRequest\DataDispatcher\JsonRequestDispatcher;
 
-class Jsonrequest extends AbstractDestination
+class JsonRequest extends AbstractDestination
 {
     public function getExtensionKey(): string
     {
-        return "tx_formrelay_jsonrequest";
+        return "tx_formrelay_json_request";
     }
 
     protected function getDispatcher(array $conf, array $data, array $context)
@@ -31,6 +31,6 @@ class Jsonrequest extends AbstractDestination
             }
         }
 
-        return $this->objectManager->get(JsonrequestDispatcher::class, $url, $cookies);
+        return $this->objectManager->get(JsonRequestDispatcher::class, $url, $cookies);
     }
 }
