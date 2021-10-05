@@ -50,6 +50,7 @@
     }
   },
   "replace": {
+    "mediatis/formrelay_jsonrequest": "self.version",
     "mediatis/formrelay_json_request": "self.version",
     "mediatis/formrelay-jsonrequest": "self.version"
   },
