@@ -4,7 +4,7 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    'formrelay_jsonrequest',
+    'formrelay_json_request',
     'Configuration/TypoScript',
     'FormRelay JSON Request'
 );

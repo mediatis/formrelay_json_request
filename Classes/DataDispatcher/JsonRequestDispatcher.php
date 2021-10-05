@@ -1,11 +1,11 @@
 <?php
 
-namespace Mediatis\FormrelayJsonrequest\DataDispatcher;
+namespace Mediatis\FormrelayJsonRequest\DataDispatcher;
 
 use Mediatis\Formrelay\DataDispatcher\RequestDispatcher;
 use Mediatis\Formrelay\Domain\Model\FormField\MultiValueFormField;
 
-class JsonrequestDispatcher extends RequestDispatcher
+class JsonRequestDispatcher extends RequestDispatcher
 {
     const DEFAULT_HEADERS = [
         'Content-Type' => 'application/json',
