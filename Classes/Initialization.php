@@ -1,6 +1,6 @@
 <?php
 
-namespace Mediatis\FormrelayJsonrequest;
+namespace Mediatis\FormrelayJsonRequest;
 
 use FormRelay\Core\Service\RegistryInterface;
 use FormRelay\JsonRequest\JsonRequestInitialization;

@@ -5,5 +5,5 @@ if (!defined('TYPO3_MODE')) {
 
 (function() {
     // relay initalization
-    \Mediatis\Formrelay\Utility\RegistrationUtility::registerInitialization(\Mediatis\FormrelayJsonrequest\Initialization::class);
+    \Mediatis\Formrelay\Utility\RegistrationUtility::registerInitialization(\Mediatis\FormrelayJsonRequest\Initialization::class);
 })();

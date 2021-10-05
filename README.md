@@ -5,33 +5,33 @@ You should checkout  https://github.com/mediatis/formrelay to find more detail h
 
 # Installation
 
-`composer require mediatis/formrelay-jsonrequest`
+`composer require mediatis/formrelay-json-request`
 
 # Support
 If you have any question, please contact us voehringer@mediatis.de
 
 # Submit bug reports or feature requests
 
-Look at the [Issues](https://github.com/mediatis/formrelay_jsonrequest/issues)
+Look at the [Issues](https://github.com/mediatis/formrelay_json_request/issues)
 for what has been planned to be implemented in the (near) future.
 
 # Setup
 
 All basic settings, explained in EXT:formrelay, (including the overwrite mechanics) apply to this extension as well.  
 
-## plugin.tx_formrelay_jsonrequest.settings.enabled
+## plugin.tx_formrelay_json_request.settings.enabled
 
 Default: `0`.
 
 Set to `1` to enable the extension.
 
-## plugin.tx_formrelay_jsonrequest.settings.url
+## plugin.tx_formrelay_json_request.settings.url
 
 Default: none.
 
 Set the URL of the webhook or other endpoint to receive the JSON HTTP request.
 
-## plugin.tx_formrelay_jsonrequest.settings.cookies
+## plugin.tx_formrelay_json_request.settings.cookies
 
 Default: empty array.
 
