@@ -48,6 +48,11 @@
       "Mediatis\\FormrelayJsonRequest\\Tests\\": "Tests"
     }
   },
+  "replace": {
+    "mediatis/formrelay_jsonrequest": "self.version",
+    "mediatis/formrelay_json_request": "self.version",
+    "mediatis/formrelay-jsonrequest": "self.version"
+  },
   "config": {
     "vendor-dir": ".Build/vendor",
     "bin-dir": ".Build/bin"
