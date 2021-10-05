@@ -32,7 +32,7 @@
   ],
   "require": {
     "typo3/cms-core": "^9.5 || ^10.4",
-    "typo3-ter/formrelay": "dev-feature/LMSCB-16_async_submission",
+    "mediatis/formrelay": "dev-feature/LMSCB-16_async_submission",
     "form-relay/json-request": "dev-feature/LMSCB-16_async_submission"
   },
   "require-dev": {
