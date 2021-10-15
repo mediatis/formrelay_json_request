@@ -1,0 +1,28 @@
+
+2.0.0
+
+[TASK] code base moved to package form-relay/json-request
+
+1.0.5
+
+[TASK] configured replacements in composer.json
+
+1.0.4
+
+[BUGFIX] fixed namespace and composer configuration
+
+1.0.3
+
+[BUGFIX] fixed cookie handling in data dispatcher
+
+1.0.2
+
+[TASK] updated base typoscript
+
+1.0.1
+
+[TASK] update composer data
+
+1.0.0
+
+[TASK] code base, dependencies, typoscript, dispatcher and destination
