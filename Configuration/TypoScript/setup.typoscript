@@ -1,29 +1,16 @@
-
 plugin.tx_formrelay_json_request {
   settings {
+
     enabled = {$plugin.tx_formrelay_json_request.settings.enabled}
     url = {$plugin.tx_formrelay_json_request.settings.url}
 
-    cookies =
-
-    gate {
-    }
-
-    defaults {
-      # request-field -> request-value
-      # some_id = xyz
-    }
+    ignoreEmptyFields = {$plugin.tx_formrelay_json_request.settings.ignoreEmptyFields}
+    passthroughFields = {$plugin.tx_formrelay_json_request.settings.passthroughFields}
 
     fields {
-      mapping {
-        # form-field -> request-field
-        # first_name = first-name
-      }
-
-      unmapped.ignore = 1
     }
-    values {
-      ignoreIfEmpty = 1
+
+    cookies {
     }
   }
 }
